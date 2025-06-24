@@ -1,0 +1,615 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.top-center-logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Nav links (Desktop default) */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-left: 300px;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 350;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #6a6e73;
+}
+
+/* Icons */
+.icon-1 {
+    display: block;
+    position: absolute;
+    left: 200px;
+    padding-top: 60px;
+    width: 18px;
+}
+
+.icon {
+    padding-top: 60px;
+    width: 18px;
+}
+
+.icon:hover,
+.icon-1:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* Toggle button (hamburger icon) */
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    display: none;
+}
+
+/* Responsive Navigation: default visible */
+#responsiveNav {
+    display: flex;
+}
+
+/* Section */
+
+.hero {
+    background-image: url('Assets/images/section-bckgrd.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 450px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    font-size: small;
+    font-weight: 500;
+}
+
+.hero .btn:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.con {
+    padding-left: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-2 {
+    background-image: url('Assets/images/Rectangle 1085.png');
+    background-size: cover;
+    background-position: center;
+    color: #f8f9fa;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 330px;
+
+}
+
+.para {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.btn-white {
+    margin-top: 30px;
+    background-color: #fff;
+    color: #121212;
+    padding: 7px 20px;
+    border-radius: 0%;
+    font-size: small;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* product section */
+.products-section {
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.product-underline::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 3px;
+    width: 80%;
+    background-color: #a3b0bd;
+}
+
+.section-desc {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+/* Projects Section 1 */
+.product-card-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-1 img {
+    width: 130%;
+    height: 450px;
+
+}
+
+.product-card-2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-2 img {
+    width: 80%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.product-card-3 {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-3 img {
+    width: 100%;
+    height: 196px;
+    object-fit: cover;
+    margin-bottom: 15%
+}
+
+.product-card-4 {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-4 img {
+    width: 100%;
+    height: 196px;
+    object-fit: cover;
+    margin-bottom: 10%
+}
+
+/* Info block (always visible at bottom) */
+
+.product-info-1 {
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    width: 90%;
+    background-image: url('Assets/images/B-Rectangle 1108.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 16px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info-1 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.product-info-1 p {
+    font-size: 10px;
+    color: #d1d1d1;
+    margin: 0;
+}
+
+.product-info-2 {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+    background-image: url('Assets/images/B-Rectangle 1108.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 16px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info-2 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.product-info-2 p {
+    font-size: 10px;
+    color: #d1d1d1;
+    margin: 0;
+}
+
+.product-info-3 {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    background-image: url('Assets/images/B-Rectangle 1108.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 16px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info-3 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.product-info-3 p {
+    font-size: 10px;
+    color: #d1d1d1;
+    margin: 0;
+}
+
+.product-info-4 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    background-image: url('Assets/images/B-Rectangle 1108.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 16px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info-4 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.product-info-4 p {
+    font-size: 10px;
+    color: #d1d1d1;
+    margin: 0;
+}
+
+/* Projects Section 2 */
+
+.projects h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.projects img {
+    width: 100%;
+    height: auto;
+
+}
+
+.projects h6 {
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.projects .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.projects .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0%;
+    width: 130px;
+    height: 35px;
+    font-size: x-small;
+    background-color: #111;
+    color: #fff;
+    border: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.footer {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+footer h5 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+footer h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer .bi {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+footer .bi:hover {
+    color: #007bff;
+}
+
+.custom-list li {
+    color: #b9b8b0;
+}
+
+.custom-list li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* ======================= Responsive Styling ======================= */
+@media (max-width: 991px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #responsiveNav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 90%;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 3;
+    }
+
+    #responsiveNav.show {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .icon,
+    .icon-1 {
+        padding-top: 10px;
+        position: static;
+        margin: 0 5px;
+    }
+
+    .top-center-logo {
+        position: static;
+        transform: none;
+        margin-bottom: 0.5rem;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .con {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .container-2 {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .para {
+        font-size: 0.8rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* Product Cards */
+    .product-card-1,
+    .product-card-2,
+    .product-card-3,
+    .product-card-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .product-card-1 img,
+    .product-card-2 img,
+    .product-card-3 img,
+    .product-card-4 img {
+        width: 100% !important;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .col-md-3,
+    .col-md-4,
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Projects section responsiveness */
+    .projects h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .projects p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .projects .btn-wrapper {
+        justify-content: center;
+    }
+
+    /* Footer responsiveness */
+    .footer {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .footer h5 {
+        font-size: 2rem;
+    }
+
+    .footer ul {
+        margin-top: 1rem;
+    }
+
+    .footer .d-flex {
+        justify-content: center;
+    }
+}
